@@ -1,0 +1,56 @@
+.landscape-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #f8d7da;
+    color: #721c24;
+    font-size: 1.5rem;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+.glossy-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+.glossy-tile {
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), -3px -3px 5px rgba(255, 255, 255, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    text-align: left;
+}
+
+.glossy-tile:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3), -4px -4px 8px rgba(255, 255, 255, 0.8);
+}
+
+.glossy-tile h5 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.glossy-tile p {
+    margin: 0 0 8px;
+    color: #555;
+    font-size: 0.9em;
+}

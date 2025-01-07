@@ -1,0 +1,44 @@
+.image-container-dashboard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-box-dashboard {
+    width: 100%;
+    padding-top: 100%; /* Maintains square aspect ratio */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* Optional: Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+    margin-bottom: 10px;
+    background-color: #cf8c7d;
+
+}
+
+.image-box-dashboard img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image fills box without distortion */
+}
+
+.image-caption-dashboard {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Reduce size of boxes on large screens */
+@media (min-width: 1200px) {
+    .image-box-dashboard {
+        width: 100%/* Center the box */
+    }
+    .image-container-dashboard{
+        padding: 0px 40px 40px;
+    }
+}

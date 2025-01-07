@@ -1,0 +1,10 @@
+ul, li, a {
+    margin: 0px;
+    padding: 0px;
+}
+
+#navbarColor {
+    background: linear-gradient(to right, #97a4ff, #aac8f1, #0369ff);
+    /*background: linear-gradient(to right, #3cffae, #3cffbb, #d6a0ff, #33ffb8);*/
+
+}
